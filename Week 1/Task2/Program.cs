@@ -11,7 +11,7 @@ namespace Task2
 
     {
 
-        public string name;
+        public string name; // variables in the class student
 
         public string id;
 
@@ -23,11 +23,11 @@ namespace Task2
 
         {
 
-            name = Console.ReadLine();
+            name = Console.ReadLine(); //input name
 
-            id = Console.ReadLine();
+            id = Console.ReadLine(); //input id
 
-            year = Console.ReadLine();
+            year = Console.ReadLine(); // input year
 
         }
 
@@ -37,13 +37,13 @@ namespace Task2
 
         {
 
-            int Year = int.Parse(year);
+            int Year = int.Parse(year); // convert to int
 
-            Console.WriteLine($"Name: {name} ID: {id} Year: {Year}");
+            Console.WriteLine($"Name: {name} ID: {id} Year: {Year}"); // output example (Name: Sultan ID: 18BD110366 Year:18 )
 
-            Year++;
+            Year++; // increment
 
-            Console.WriteLine($"Name: {name} ID: {id} Year: {Year}");
+            Console.WriteLine($"Name: {name} ID: {id} Year: {Year}"); // output example (Name: Sultan ID: 18BD110366 Year:19 )
 
         }
 
