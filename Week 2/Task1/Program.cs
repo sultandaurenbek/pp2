@@ -12,7 +12,7 @@ namespace Task1
         static void Main(string[] args)
         {
             //to read text from files
-            FileStream fs = new FileStream(@"C:\input.txt", FileMode.Open, FileAccess.Read);
+            FileStream fs = new FileStream(@"C:\input.txt", FileMode.Open, FileAccess.Read); // указываем путь к файлу
             StreamReader s = new StreamReader(fs);
             string l = s.ReadLine(); // saving read files to string l;
             bool k = true;
