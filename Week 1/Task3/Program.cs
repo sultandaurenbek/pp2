@@ -29,15 +29,15 @@ namespace Task3
 
             string[] ar_str = s.Split(); // delete the spaces and put to the string array
 
-            int[] number_1 = new int[n]; // new array with size n
+            int[] arr1 = new int[n]; // new array with size n
 
-            int[] number_2 = new int[2 * n]; // second array with size 2*n
+            int[] arr2 = new int[2 * n]; // second array with size 2*n
 
             for (int i = 0; i < n; i++)
         {
-            number_1[i] = int.Parse(ar_str[i]); // write variables from string array to the integer array
+            arr1[i] = int.Parse(ar_str[i]); // write variables from string array to the integer array
         }
-            F(n, number_1, number_2); // call the funcrion
+            F(n, arr1, arr2); // call the funcrion
         }
     }
 
