@@ -25,7 +25,6 @@ namespace Task1
                     {
                         ls.Add(array_int[i]); // add to list 
                         continue; //test next number
-
                     }
                     for (int j = 2; i < array_int[i]; j++)
                     {
