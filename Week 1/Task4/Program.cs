@@ -19,7 +19,7 @@ namespace Task4
 
             {
 
-                for (int j = 0; j < i + 1; j++) arr[i, j] = "[*]";// put our symbol to 2D array
+                for (int j = 0; j <= i ; j++) arr[i, j] = "[*]";// put our symbol to 2D array
                 
             }
 
