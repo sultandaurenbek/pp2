@@ -9,7 +9,7 @@ namespace Task1
 {
     class Program
     {
-        
+
         static void Main(string[] args)
         {
             //to read text from files
@@ -26,7 +26,7 @@ namespace Task1
             }
             if (k == true) Console.WriteLine("YES");
             else Console.WriteLine("NO");
-            
+
             s.Close();
         }
     }
