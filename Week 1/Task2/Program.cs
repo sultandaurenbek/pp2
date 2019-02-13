@@ -6,37 +6,25 @@ using System.Threading.Tasks;
 
 namespace Task2
 {
-
     class Student
-
     {
-
         public string name; // variables in the class student
 
         public string id;
 
         public string year;
 
-
-
-        public Student()
-
-        {
-
+     public Student()
+     {
             name = Console.ReadLine(); //input name
 
             id = Console.ReadLine(); //input id
 
             year = Console.ReadLine(); // input year
+      }
 
-        }
-
-
-
-        public void PrintInfo()
-
+     public void PrintInfo()
         {
-
             int Year = int.Parse(year); // convert to int
 
             Console.WriteLine($"Name: {name} ID: {id} Year: {Year}"); // output example (Name: Sultan ID: 18BD110366 Year:18 )
@@ -44,9 +32,7 @@ namespace Task2
             Year++; // increment
 
             Console.WriteLine($"Name: {name} ID: {id} Year: {Year}"); // output example (Name: Sultan ID: 18BD110366 Year:19 )
-
         }
-
     }
 
     class Program
@@ -56,13 +42,8 @@ namespace Task2
         static void Main(string[] args)
 
         {
-
             Student s = new Student();
-
             s.PrintInfo();
-
         }
-
-    }
-
-}
+     }
+ }
