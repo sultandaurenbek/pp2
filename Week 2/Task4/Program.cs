@@ -13,9 +13,9 @@ namespace Task4
         {
             string file = "text.txt"; // the name of the file, that i will create
 
-            string path1 = @"C:\Users\bbekt\Desktop\PP2 2019 spring"; // the path of created file
+            string path1 = @"C:\Users\Sultan\Desktop\task4"; // the path of created file
 
-            string path2 = @"C:\Users\bbekt\Desktop\PP2 2019 spring\lab2"; // the path of created and copied file
+            string path2 = @"C:\Users\Sultan\Desktop\task4\task"; // the path of created and copied file
 
             string sourcefile = Path.Combine(path1, file); // with path.combine a file to the path1, it is like to the file give a place in pc
 
