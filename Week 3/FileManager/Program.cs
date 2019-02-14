@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FileManager
+namespace FarManager
 {
     class layer
     {
@@ -44,6 +44,8 @@ namespace FileManager
             if (fInfo.GetType() == typeof(DirectoryInfo))
             {
                 DirectoryInfo y = fInfo as DirectoryInfo;
+                Console.BackgroundColor = ConsoleColor.Black;
+               
                 for (int i = 1; i <= 2; i++) // creating space for writing name from console
                 {
                     Console.WriteLine();
@@ -62,6 +64,7 @@ namespace FileManager
             else
             {
                 FileInfo y = fInfo as FileInfo; // sme wirth file
+                Console.BackgroundColor = ConsoleColor.Black;
                 for (int i = 1; i <= 2; i++) // creating space for writing name from console
                 {
                     Console.WriteLine();
@@ -122,7 +125,7 @@ namespace FileManager
                 {
                     if (i == selecteditem)
                     {
-                        Console.BackgroundColor = ConsoleColor.Red;
+                        Console.BackgroundColor = ConsoleColor.Blue;
                     }
                     else Console.BackgroundColor = ConsoleColor.Black;
                     if (items[i].GetType() == typeof(DirectoryInfo))

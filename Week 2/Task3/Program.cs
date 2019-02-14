@@ -26,7 +26,7 @@ namespace Task3
             var x = dir.GetFileSystemInfos();
 
             foreach (var t in x)
-
+                
             {
 
                 if (t.GetType() == typeof(DirectoryInfo))//if its directory we call function with more spaces
