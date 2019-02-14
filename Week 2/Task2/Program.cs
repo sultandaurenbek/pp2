@@ -9,7 +9,7 @@ namespace Task2
 {
     class Program
     {
-        static bool F(int n) // bool function that checks for prime; if the number prime f returns true, else returns false
+        static  bool F(int n) // bool function that checks for prime; if the number prime f returns true, else returns false
         {
             if (n <= 1) return false;
             else
@@ -58,7 +58,7 @@ namespace Task2
 
             for (int i = 0; i < b.Length; i++)
             {
-            if (F(b[i]) == true)
+            if (F(b[i])==true)
             {
             w.Write(b[i] + " "); // writing actually
             }
@@ -66,6 +66,8 @@ namespace Task2
             w.Close();
 
             fs.Close();
+
+            fs2.Close();
 
             s.Close();
         }
