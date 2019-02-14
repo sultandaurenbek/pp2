@@ -30,23 +30,23 @@ namespace Task2
 
         static void Main(string[] args)
         {
-            FileStream fs = new FileStream(@"C:\Users\Sultan\Desktop\input.txt", FileMode.Open, FileAccess.Read);//reading file
+            FileStream fs = new FileStream("input.txt", FileMode.Open, FileAccess.Read);//reading file
 
-            StreamReader r = new StreamReader(fs);
+            StreamReader s = new StreamReader(fs);
 
-            string l = r.ReadLine(); //saving file into string l
+            string l = s.ReadLine(); //saving file into string l
 
-            string[] a = l.Split(); // spliting string into substrings without space and saving them into array
+            string[] str = l.Split(); // spliting string into substrings without space and saving them into array
 
-            int[] b = new int[a.Length];
+            int[] b = new int[str.Length];
 
-            for (int i = 0; i < a.Length; i++)
+            for (int i = 0; i < str.Length; i++)
 
             {
-               b[i] = int.Parse(a[i]); // converting string into integers
+               b[i] = int.Parse(str[i]); // converting string into integers
             }
 
-            string path = @"C:\Users\Sultan\Desktop\output.txt";
+            string path = "output.txt";
 
             FileStream fs1 = File.Create(path);
 
@@ -67,7 +67,7 @@ namespace Task2
 
             fs.Close();
 
-            r.Close();
+            s.Close();
         }
     }
 }
